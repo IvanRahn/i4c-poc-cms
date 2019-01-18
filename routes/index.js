@@ -33,6 +33,7 @@ var routes = {
 
 // Setup Route Bindings
 exports = module.exports = function (app) {
+	app.all('/*', keystone.middleware.cors);
 	// Views
 	app.get('/', routes.views.index);
 	app.get('/featured-cause-cards', routes.views.howitworks);
