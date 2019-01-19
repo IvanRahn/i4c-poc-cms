@@ -50,7 +50,8 @@ keystone.set('routes', require('./routes'));
 // Configure the navigation bar in Keystone's Admin UI
 keystone.set('nav', {
 	users: 'users',
-	FeaturedCauseSection: 'FeaturedCauseCard'
+	FeaturedCauseSection: 'FeaturedCauseCard',
+	ImpactSection: "ImpactSection"
 });
 
 // Start Keystone to connect to your database and initialise the web server

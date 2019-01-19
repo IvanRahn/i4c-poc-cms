@@ -36,7 +36,8 @@ exports = module.exports = function (app) {
 	app.all('/*', keystone.middleware.cors);
 	// Views
 	app.get('/', routes.views.index);
-	app.get('/featured-cause-cards', routes.views.howitworks);
+	app.get('/featured-cause-cards', routes.views.featuredcauses);
+	app.get('/impactsection', routes.views.impact);
 
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);
