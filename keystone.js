@@ -51,7 +51,8 @@ keystone.set('routes', require('./routes'));
 keystone.set('nav', {
 	users: 'users',
 	FeaturedCauseSection: 'FeaturedCauseCard',
-	ImpactSection: "ImpactSection"
+	ImpactSection: "ImpactSection",
+	OurTeam: "OurTeam"
 });
 
 // Start Keystone to connect to your database and initialise the web server
