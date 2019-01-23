@@ -28,8 +28,8 @@ keystone.init({
 });
 } else {
 	keystone.init({
-		'name': 'test',
-		'brand': 'test',
+		'name': 'i4c-cms-atlas',
+		'brand': 'i4c-cms-atlas',
 	
 		'less': 'public',
 		'static': 'public',
