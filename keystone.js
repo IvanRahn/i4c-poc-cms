@@ -28,8 +28,8 @@ keystone.init({
 });
 } else {
 	keystone.init({
-		'name': 'i4c-poc-cms',
-		'brand': 'i4c-poc-cms',
+		'name': 'test',
+		'brand': 'test',
 	
 		'less': 'public',
 		'static': 'public',
