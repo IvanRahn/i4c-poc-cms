@@ -26,19 +26,14 @@ About.add({
 	contentTop: {
         heading: { type: Types.Text, wysiwyg: true, height: 150 },
         text: { type: Types.Text, wysiwyg: true, height: 400 },
-        link: {
-            text: { type: Types.Text, wysiwyg: true, height: 400 },
-            color: { type: Types.Text, wysiwyg: true, height: 400 },
-            href: { type: Types.Text, wysiwyg: true, height: 400 },
-        },
     },
     contentBottom: {
         heading: { type: Types.Text, wysiwyg: true, height: 150 },
         text: { type: Types.Text, wysiwyg: true, height: 400 },
         link: {
             text: { type: Types.Text, wysiwyg: true, height: 400 },
-            color: { type: Types.Text, wysiwyg: true, height: 400 },
-            href: { type: Types.Text, wysiwyg: true, height: 400 },
+            color: { type: Types.Text, wysiwyg: true, height: 150 },
+            href: { type: Types.Text, wysiwyg: true, height: 150 },
         },
     },
 });
