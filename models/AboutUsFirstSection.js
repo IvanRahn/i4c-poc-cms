@@ -21,9 +21,13 @@ About.add({
 		text: { type: Types.Text, wysiwyg: true, height: 400 },
     },
 	Content: {
-        button: { type: Types.Text, wysiwyg: true, height: 150 },
         heading: { type: Types.Text, wysiwyg: true, height: 150 },
-		text: { type: Types.Text, wysiwyg: true, height: 400 },
+        text: { type: Types.Text, wysiwyg: true, height: 400 },
+        link: {
+            text: { type: Types.Text, wysiwyg: true, height: 400 },
+            color: { type: Types.Text, wysiwyg: true, height: 400 },
+            href: { type: Types.Text, wysiwyg: true, height: 400 },
+        },
     },
 });
 
