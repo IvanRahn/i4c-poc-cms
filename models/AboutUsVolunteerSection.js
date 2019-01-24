@@ -14,7 +14,7 @@ var About = new keystone.List('AboutVolunteerSection', {
 About.add({
 	title: { type: String, required: true },
 	featured: { type: Types.Select, options: 'Yes, No', default: 'No', index: true },
-    Card: {
+    card: {
         pageImage: { type: Types.CloudinaryImage },
         heading: { type: Types.Text, wysiwyg: true, height: 150 },
 		text: { type: Types.Text, wysiwyg: true, height: 400 },

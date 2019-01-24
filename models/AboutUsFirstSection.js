@@ -14,13 +14,13 @@ var About = new keystone.List('AboutFirstSection', {
 About.add({
 	title: { type: String, required: true },
 	featured: { type: Types.Select, options: 'Yes, No', default: 'No', index: true },
-    Image: { type: Types.CloudinaryImage },
-    Card: {
+    image: { type: Types.CloudinaryImage },
+    card: {
         pageImage: { type: Types.CloudinaryImage },
         heading: { type: Types.Text, wysiwyg: true, height: 150 },
 		text: { type: Types.Text, wysiwyg: true, height: 400 },
     },
-	Content: {
+	content: {
         heading: { type: Types.Text, wysiwyg: true, height: 150 },
         text: { type: Types.Text, wysiwyg: true, height: 400 },
         link: {
