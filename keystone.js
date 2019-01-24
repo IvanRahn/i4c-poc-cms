@@ -70,8 +70,8 @@ keystone.set('nav', {
 	FeaturedCauseSection: 'FeaturedCauseCard',
 	ImpactSection: "ImpactSection",
 	Causes: "causes", 
-	BoardMembers: "OurTeam"
-
+	BoardMembers: ["OurTeam", "Our Promise", "Team Members", "Find Out More"]
+	// wrap boardmemebers: []
 });
 
 // Start Keystone to connect to your database and initialise the web server
