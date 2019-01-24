@@ -70,9 +70,9 @@ keystone.set('nav', {
 	FeaturedCauseSection: 'FeaturedCauseCard',
 	ImpactSection: "ImpactSection",
 	Causes: "causes",
-	HowItWorks: "HowItWorksSteps"
+	HowItWorks: "HowItWorksSteps",
 	Causes: "causes", 
-	BoardMembers: "OurTeam"
+	BoardMembers: "OurTeam",
 
 });
 
