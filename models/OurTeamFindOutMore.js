@@ -1,7 +1,7 @@
 var keystone = require('keystone');
 var Types = keystone.Field.Types;
 
-var Member = new keystone.List('OurPromise', {
+var Member = new keystone.List('OurTeamFindOutMore', {
     map: { name: 'title' },
     autokey: { path: 'slug', from: 'title', unique: true },
 });

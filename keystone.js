@@ -73,13 +73,8 @@ keystone.set('nav', {
 	About: ["AboutFirstSection", "AboutSecondSection", "AboutVolunteerSection", "AboutThirdSection"],
 	HowItWorks: "HowItWorksSteps",
 	Causes: "causes", 
-<<<<<<< HEAD
-	BoardMembers: ["OurTeam", "Our Promise", "Team Members", "Find Out More"]
+	OurTeam: ["OurTeamOurPromise", "OurTeamTeamMembers", "OurTeamFindOutMore"]
 	// wrap boardmemebers: []
-=======
-	BoardMembers: "OurTeam",
-
->>>>>>> 01c5f07f6e19b3c23c7ccc760e19bfd9e206ac1d
 });
 
 // Start Keystone to connect to your database and initialise the web server
