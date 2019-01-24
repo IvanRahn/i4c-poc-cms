@@ -24,22 +24,28 @@ About.add({
 		text: { type: Types.Text, wysiwyg: true, height: 400 },
     },
     contentBottom: {
+        image_logos: {
+            image_logo1: { type: Types.CloudinaryImage },
+            image_logo2: { type: Types.CloudinaryImage },
+        },
         heading: { type: Types.Text, wysiwyg: true, height: 150 },
         text: { type: Types.Text, wysiwyg: true, height: 400 },
-        link: {
-            text: { type: Types.Text, wysiwyg: true, height: 400 },
-            color: { type: Types.Text, wysiwyg: true, height: 400 },
-            href: { type: Types.Text, wysiwyg: true, height: 400 },
-        },
-        link2: {
-            text: { type: Types.Text, wysiwyg: true, height: 400 },
-            color: { type: Types.Text, wysiwyg: true, height: 400 },
-            href: { type: Types.Text, wysiwyg: true, height: 400 },
-        },
-        link3: {
-            text: { type: Types.Text, wysiwyg: true, height: 400 },
-            color: { type: Types.Text, wysiwyg: true, height: 400 },
-            href: { type: Types.Text, wysiwyg: true, height: 400 },
+        links: {
+            link: {
+                text: { type: Types.Text, wysiwyg: true, height: 400 },
+                color: { type: Types.Text, wysiwyg: true, height: 400 },
+                href: { type: Types.Text, wysiwyg: true, height: 400 },
+            },
+            link2: {
+                text: { type: Types.Text, wysiwyg: true, height: 400 },
+                color: { type: Types.Text, wysiwyg: true, height: 400 },
+                href: { type: Types.Text, wysiwyg: true, height: 400 },
+            },
+            link3: {
+                text: { type: Types.Text, wysiwyg: true, height: 400 },
+                color: { type: Types.Text, wysiwyg: true, height: 400 },
+                href: { type: Types.Text, wysiwyg: true, height: 400 },
+            },
         },
     },
 });
