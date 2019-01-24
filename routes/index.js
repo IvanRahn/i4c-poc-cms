@@ -38,7 +38,11 @@ exports = module.exports = function (app) {
 	app.get('/', routes.views.index);
 	app.get('/featured-cause-cards', routes.views.featuredcauses);
 	app.get('/impactsection', routes.views.impact);
-	app.get('/causes', routes.views.causes); 
+	app.get('/causes', routes.views.causes);
+	app.get('/about/first-section', routes.views.aboutFirstSection);
+	app.get('/about/second-section', routes.views.aboutSecondSection);
+	app.get('/about/third-section', routes.views.aboutThirdSection);
+	app.get('/about/volunteer-section', routes.views.aboutVolunteerSection);
 	app.get('/our-team', routes.views.ourteam);
 	app.get('/howitworkssteps', routes.views.steps);
 
