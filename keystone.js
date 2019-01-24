@@ -53,7 +53,7 @@ keystone.set('nav', {
 	FeaturedCauseSection: 'FeaturedCauseCard',
 	ImpactSection: "ImpactSection",
 	Causes: "causes",
-	About: "AboutFirstSection",
+	About: ["AboutFirstSection", "AboutSecondSection", "AboutVolunteerSection", "AboutThirdSection"]
 });
 
 // Start Keystone to connect to your database and initialise the web server
