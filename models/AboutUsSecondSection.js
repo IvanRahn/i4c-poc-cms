@@ -30,22 +30,22 @@ About.add({
         },
         heading: { type: Types.Text, wysiwyg: true, height: 150 },
         text: { type: Types.Text, wysiwyg: true, height: 400 },
-        links: {
-            link: {
-                text: { type: Types.Text, wysiwyg: true, height: 400 },
-                color: { type: Types.Text, wysiwyg: true, height: 400 },
-                href: { type: Types.Text, wysiwyg: true, height: 400 },
-            },
-            link2: {
-                text: { type: Types.Text, wysiwyg: true, height: 400 },
-                color: { type: Types.Text, wysiwyg: true, height: 400 },
-                href: { type: Types.Text, wysiwyg: true, height: 400 },
-            },
-            link3: {
-                text: { type: Types.Text, wysiwyg: true, height: 400 },
-                color: { type: Types.Text, wysiwyg: true, height: 400 },
-                href: { type: Types.Text, wysiwyg: true, height: 400 },
-            },
+    },
+    linksBottom: {
+        link: {
+            text: { type: Types.Text, wysiwyg: true, height: 400 },
+            color: { type: Types.Text, wysiwyg: true, height: 400 },
+            href: { type: Types.Text, wysiwyg: true, height: 400 },
+        },
+        link2: {
+            text: { type: Types.Text, wysiwyg: true, height: 400 },
+            color: { type: Types.Text, wysiwyg: true, height: 400 },
+            href: { type: Types.Text, wysiwyg: true, height: 400 },
+        },
+        link3: {
+            text: { type: Types.Text, wysiwyg: true, height: 400 },
+            color: { type: Types.Text, wysiwyg: true, height: 400 },
+            href: { type: Types.Text, wysiwyg: true, height: 400 },
         },
     },
 });
