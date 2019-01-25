@@ -43,7 +43,9 @@ exports = module.exports = function (app) {
 	app.get('/about/second-section', routes.views.aboutSecondSection);
 	app.get('/about/third-section', routes.views.aboutThirdSection);
 	app.get('/about/volunteer-section', routes.views.aboutVolunteerSection);
-	
+	app.get('/our-team', routes.views.ourteam);
+	app.get('/howitworkssteps', routes.views.steps);
+
 
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);
