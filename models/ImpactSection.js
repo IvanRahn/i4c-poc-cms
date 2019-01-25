@@ -13,12 +13,8 @@ var Impact = new keystone.List('ImpactSection', {
 
 Impact.add({
 	title: { type: String, required: true },
-	featured: { type: Types.Select, options: 'Yes, No', default: 'No', index: true },
-	image: { type: Types.CloudinaryImage },
-	content: {
-		heading: { type: Types.Html, wysiwyg: true, height: 150 },
-		text: { type: Types.Html, wysiwyg: true, height: 400 },
-	},
+		heading: { type: Types.Text, wysiwyg: true, height: 150 },
+		subtext: { type: Types.Text, wysiwyg: true, height: 150 },
 });
 
 Impact.schema.virtual('content.full').get(function () {
