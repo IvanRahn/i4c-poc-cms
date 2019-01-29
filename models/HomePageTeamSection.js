@@ -13,8 +13,9 @@ var TeamSection = new keystone.List('TeamSection', {
 
 TeamSection.add({
 	title: { type: String, required: true },
-    media: { type: Types.Text },
-    heading: { type: Types.Html, wysiwyg: true, height: 150 },
+	media: { type: Types.Text },
+	image: { type: Types.CloudinaryImage },
+    heading: { type: Types.Text, wysiwyg: true, height: 150 },
 	text: { type: Types.Html, wysiwyg: true, height: 400 },
 });
 
