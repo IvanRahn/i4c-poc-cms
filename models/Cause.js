@@ -14,6 +14,7 @@ var Cause = new keystone.List('Causes', {
 Cause.add({
 	title: { type: String, required: true },
 	featuredAsCard: { type: Types.Select, options: 'Yes, No', default: 'No', index: true },
+	hidden: { type: Types.Select, options: 'Yes, No', default: 'No', index: true },
     cardImage: { type: Types.CloudinaryImage },
 	cardContent: {
         heading: { type: Types.Text, wysiwyg: true, height: 150 },

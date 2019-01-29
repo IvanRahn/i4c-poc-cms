@@ -44,7 +44,7 @@ exports = module.exports = function (app) {
 	app.get('/about/third-section', routes.views.aboutThirdSection);
 	app.get('/about/volunteer-section', routes.views.aboutVolunteerSection);
 	app.get('/our-team/our-promise', routes.views.ourteamOurPromise);
-	app.get('/our-team/team-members',routes.views.ourteamTeamMembers); 
+	app.get('/our-team/members',routes.views.ourteamMembers); 
 	app.get('/our-team/find-out-more', routes.views.ourteamFindOutMore);
 	app.get('/howitworkssteps', routes.views.steps);
 	app.get('/teamsection', routes.views.teamSection);
