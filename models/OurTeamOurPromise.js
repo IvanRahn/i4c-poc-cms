@@ -8,7 +8,10 @@ var Member = new keystone.List('OurTeamOurPromise', {
 Member.add({
     title: { type: String, required: true },
     image: { type: Types.CloudinaryImage },
-    content: {
+    link: {
+        text: { type: Types.Text, wysiwyg: true, height: 400 },
+    },
+	content: {
         heading: { type: Types.Text, wysiwyg: true, height: 150 },
         text: { type: Types.Html, wysiwyg: true, height: 400 },
     },
