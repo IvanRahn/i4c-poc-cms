@@ -13,7 +13,7 @@ var HowItWorksSteps = new keystone.List('HowItWorksSteps', {
 
 HowItWorksSteps.add({
 	title: { type: String, required: true },
-	featuredAsCard: { type: Types.Select, options: 'Yes, No', default: 'No', index: true },
+	order: { type: Number, required: true, default: 0},
     image: { type: Types.CloudinaryImage },
     heading: { type: Types.Text, wysiwyg: true, height: 150 },
 	text: { type: Types.Html, wysiwyg: true, height: 400 },
