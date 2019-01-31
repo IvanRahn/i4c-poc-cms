@@ -47,7 +47,8 @@ exports = module.exports = function (app) {
 	app.get('/our-team/members',routes.views.ourteamMembers); 
 	app.get('/our-team/find-out-more', routes.views.ourteamFindOutMore);
 	app.get('/howitworkssteps', routes.views.steps);
-	app.get('/teamsection', routes.views.teamSection);
+	app.get('/teamsection', routes.views.teamSection); 
+	app.get('/storycause', routes.views.storycause);
 
 
 	// make routes for the new models total new 2 - reuse our team
