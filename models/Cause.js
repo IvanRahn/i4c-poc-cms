@@ -17,12 +17,12 @@ Cause.add({
 	hidden: { type: Types.Select, options: 'Yes, No', default: 'No', index: true },
 	cardContent: {
 		heading: { type: Types.Text, wysiwyg: true, height: 150 },
-		text: { type: Types.Html, wysiwyg: true, height: 400 },
+		text: { type: Types.Html, wysiwyg: true, height: 200 },
 		image: { type: Types.CloudinaryImage },
     },
     topSection: {
 		heading: { type: Types.Text, wysiwyg: true, height: 150 },
-		text: { type: Types.Html, wysiwyg: true, height: 400 },
+		text: { type: Types.Html, wysiwyg: true, height: 200 },
 		image: { type: Types.CloudinaryImage },
 	},
 	impact1: {
@@ -47,20 +47,20 @@ Cause.add({
 	},
 	middleSection: {
 		heading1: {type: Types.Text},
-		text: {type: Types.Html},
+		text: { type: Types.Html, wysiwyg: true, height: 200 },		
 		cardHeading: {type: Types.Text},
-		cardText: {type: Types.Html},
+		cardText: { type: Types.Html, wysiwyg: true, height: 200 },
 		cardFile: {type: Types.CloudinaryImage},
 	},
 	quote: {
-		text: {type: Types.Html},
+		text: { type: Types.Html, wysiwyg: true, height: 200 },
 		author: {type: Types.Text},
 	},
 	story: {
 		image: {type: Types.CloudinaryImage},
 		heading: {type: Types.Text},
 		subHeading: {type: Types.Text},
-		text: {type: Types.Html},
+		text: { type: Types.Html, wysiwyg: true, height: 200 },
 		achievement1: {
 			image: {type: Types.CloudinaryImage},
 			text: {type: Types.Text}
