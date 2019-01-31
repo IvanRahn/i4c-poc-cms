@@ -43,6 +43,7 @@ exports = module.exports = function (app) {
 	app.get('/about/second-section', routes.views.aboutSecondSection);
 	app.get('/about/third-section', routes.views.aboutThirdSection);
 	app.get('/about/volunteer-section', routes.views.aboutVolunteerSection);
+	app.get('/causes/homepage-card', routes.views.causeHomePageCard);
 	app.get('/our-team/our-promise', routes.views.ourteamOurPromise);
 	app.get('/our-team/members',routes.views.ourteamMembers); 
 	app.get('/our-team/find-out-more', routes.views.ourteamFindOutMore);
