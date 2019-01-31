@@ -43,7 +43,7 @@ exports = module.exports = function (app) {
 	app.get('/about/second-section', routes.views.aboutSecondSection);
 	app.get('/about/third-section', routes.views.aboutThirdSection);
 	app.get('/about/volunteer-section', routes.views.aboutVolunteerSection);
-	
+	app.get('/causes/homepage-card', routes.views.causeHomePageCard);
 
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);

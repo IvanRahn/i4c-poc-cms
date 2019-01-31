@@ -52,8 +52,8 @@ keystone.set('nav', {
 	users: 'users',
 	FeaturedCauseSection: 'FeaturedCauseCard',
 	ImpactSection: "ImpactSection",
-	Causes: "causes",
-	About: ["AboutFirstSection", "AboutSecondSection", "AboutVolunteerSection", "AboutThirdSection"]
+	Causes: ["causes","CauseHomePageCard"],
+	About: ["AboutFirstSection", "AboutSecondSection", "AboutVolunteerSection", "AboutThirdSection"],
 });
 
 // Start Keystone to connect to your database and initialise the web server
