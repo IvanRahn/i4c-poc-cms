@@ -11,10 +11,7 @@ StoryCause.add({
     content: {
         heading: { type: Types.Text, wysiwyg: true, height: 150 },
         text: { type: Types.Html, wysiwyg: true, height: 400 },
-    },
-    headingTop:{
-        heading: { type: Types.Text, wysiwyg: true, height: 150 },
-    }
+    } 
 });
 StoryCause.schema.virtual('content.full').get(function () {
     return this.content.text || this.content.heading;
