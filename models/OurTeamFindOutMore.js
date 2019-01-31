@@ -7,10 +7,12 @@ var Member = new keystone.List('OurTeamFindOutMore', {
 });
 Member.add({
     title: { type: String, required: true },
-    image: { type: Types.CloudinaryImage },
     content: {
         heading: { type: Types.Text, wysiwyg: true, height: 150 },
-        text: { type: Types.Html, wysiwyg: true, height: 400 },
+		link: {
+            text: { type: Types.Html, wysiwyg: true, height: 400 },
+            url: { type: Types.Text, wysiwyg: true, height: 400 },
+        },
     },
 });
 Member.schema.virtual('content.full').get(function () {
