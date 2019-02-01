@@ -71,15 +71,9 @@ keystone.set('nav', {
 	FeaturedCauseSection: 'FeaturedCauseCard',
 	ImpactSection: "ImpactSection",
 	About: ["AboutFirstSection", "AboutSecondSection", "AboutVolunteerSection", "AboutThirdSection"],
-<<<<<<< HEAD
 	HowItWorks: ["HowItWorksSteps","HomePageCard", "HomePageCardFirstSection", "HowItWorksTopPage"],
-	Causes: ["causes", "StoryCause", "CauseHomePageCard"], 
-	OurTeam: ["OurTeamOurPromise", "OurTeamMembers", "OurTeamFindOutMore", "BoardMembersTopPage"],
-=======
-	HowItWorks: ["HowItWorksSteps","HomePageCard", "HomePageCardFirstSection"],
 	Causes: ["causes", "StoryCause", "CauseHomePageCard", "CauseTopPage"], 
-	OurTeam: ["OurTeamOurPromise", "OurTeamMembers", "OurTeamFindOutMore"],
->>>>>>> 4eae575b75452fb4c4d308833667684d7fbfaaff
+	OurTeam: ["OurTeamOurPromise", "OurTeamMembers", "OurTeamFindOutMore", "BoardMembersTopPage"],
 	// wrap boardmemebers: []
 });
 
