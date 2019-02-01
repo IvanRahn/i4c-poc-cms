@@ -70,7 +70,7 @@ keystone.set('nav', {
 	HomePage: ['ImpactSection', 'TeamSection'],
 	FeaturedCauseSection: 'FeaturedCauseCard',
 	ImpactSection: "ImpactSection",
-	Causes: ["causes","CauseHomePageCard"],
+	Causes: ["causes","CauseHomePageCard", "CauseTopPage" ],
 	About: ["AboutFirstSection", "AboutSecondSection", "AboutVolunteerSection", "AboutThirdSection"],
 	HowItWorks: "HowItWorksSteps",
 	Causes: ["causes", "StoryCause"], 
