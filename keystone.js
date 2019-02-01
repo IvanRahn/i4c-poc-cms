@@ -8,7 +8,8 @@ var keystone = require('keystone');
 // Initialise Keystone with your project's configuration.
 // See http://keystonejs.com/guide/config for available options
 // and documentation.
-
+var port = process.env.PORT 
+if(process.env.PORT) {
 keystone.init({
 	'name': 'i4c-poc-cms',
 	'brand': 'i4c-poc-cms',
@@ -23,9 +24,25 @@ keystone.init({
 	'session': true,
 	'auth': true,
 	'user model': 'User',
-	'port': '3010'
+	'port': port
 });
-
+} else {
+	keystone.init({
+		'name': 'i4c-cms-atlas',
+		'brand': 'i4c-cms-atlas',
+	
+		'less': 'public',
+		'static': 'public',
+		'favicon': 'public/favicon.ico',
+		'views': 'templates/views',
+		'view engine': 'pug',
+	
+		'auto update': true,
+		'session': true,
+		'auth': true,
+		'user model': 'User',
+	});
+}
 // Load your project's Models
 keystone.import('models');
 
@@ -50,10 +67,15 @@ keystone.set('routes', require('./routes'));
 // Configure the navigation bar in Keystone's Admin UI
 keystone.set('nav', {
 	users: 'users',
+	HomePage: ['ImpactSection', 'TeamSection'],
 	FeaturedCauseSection: 'FeaturedCauseCard',
 	ImpactSection: "ImpactSection",
 	Causes: ["causes","CauseHomePageCard"],
 	About: ["AboutFirstSection", "AboutSecondSection", "AboutVolunteerSection", "AboutThirdSection"],
+	HowItWorks: "HowItWorksSteps",
+	Causes: ["causes", "StoryCause"], 
+	OurTeam: ["OurTeamOurPromise", "OurTeamMembers", "OurTeamFindOutMore"],
+	// wrap boardmemebers: []
 });
 
 // Start Keystone to connect to your database and initialise the web server
