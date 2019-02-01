@@ -6,12 +6,18 @@ var StoryCause = new keystone.List('StoryCause', {
     autokey: { path: 'slug', from: 'title', unique: true },
 });
 StoryCause.add({ 
+    // cardTop: {
+    //     heading: { type: Types.Text, wysiwyg: true, height: 150 },
+    //     text: { type: Types.Html, wysiwyg: true, height: 400 },
+    //     image: { type: Types.CloudinaryImage },
+    // },
     title: { type: String, required: true },
     image: { type: Types.CloudinaryImage },
     content: {
         heading: { type: Types.Text, wysiwyg: true, height: 150 },
         text: { type: Types.Html, wysiwyg: true, height: 400 },
-    } 
+    }, 
+    
 });
 StoryCause.schema.virtual('content.full').get(function () {
     return this.content.text || this.content.heading;
