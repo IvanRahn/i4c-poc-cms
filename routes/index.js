@@ -36,22 +36,23 @@ exports = module.exports = function (app) {
 	app.all('/*', keystone.middleware.cors);
 	// Views
 	app.get('/', routes.views.index);
-	app.get('/featured-cause-cards', routes.views.featuredcauses);
-	app.get('/impactsection', routes.views.impact);
-	app.get('/causes', routes.views.causes);
 	app.get('/about/first-section', routes.views.aboutFirstSection);
 	app.get('/about/second-section', routes.views.aboutSecondSection);
 	app.get('/about/third-section', routes.views.aboutThirdSection);
 	app.get('/about/volunteer-section', routes.views.aboutVolunteerSection);
+	app.get('/causes', routes.views.causes);
+	app.get('/causes/homepage', routes.views.causeTopPage);
 	app.get('/causes/homepage-card', routes.views.causeHomePageCard);
+	app.get('/featured-cause-cards', routes.views.featuredcauses);
+	app.get('/howitworkssteps', routes.views.steps);
+  app.get('/howitworkshomepagecard', routes.views.HowCard);
+	app.get('/howitworkshpfirstsection', routes.views.howitworkshpfirstsection);
+	app.get('/impactsection', routes.views.impact);
 	app.get('/our-team/our-promise', routes.views.ourteamOurPromise);
 	app.get('/our-team/members',routes.views.ourteamMembers); 
 	app.get('/our-team/find-out-more', routes.views.ourteamFindOutMore);
-	app.get('/howitworkssteps', routes.views.steps); 
-	app.get('/howitworkshomepagecard', routes.views.HowCard);
-	app.get('/howitworkshpfirstsection', routes.views.howitworkshpfirstsection);
-	app.get('/teamsection', routes.views.teamSection); 
 	app.get('/storycause', routes.views.storycause);
+	app.get('/teamsection', routes.views.teamSection); 
 
 
 	// make routes for the new models total new 2 - reuse our team
