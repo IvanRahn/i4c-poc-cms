@@ -15,16 +15,65 @@ Cause.add({
 	title: { type: String, required: true },
 	featuredAsCard: { type: Types.Select, options: 'Yes, No', default: 'No', index: true },
 	hidden: { type: Types.Select, options: 'Yes, No', default: 'No', index: true },
-    cardImage: { type: Types.CloudinaryImage },
 	cardContent: {
-        heading: { type: Types.Text, wysiwyg: true, height: 150 },
-		text: { type: Types.Html, wysiwyg: true, height: 400 },
-    },
-    pageImage: { type: Types.CloudinaryImage },
-    pageContent: {
 		heading: { type: Types.Text, wysiwyg: true, height: 150 },
-		text: { type: Types.Html, wysiwyg: true, height: 400 },
+		text: { type: Types.Html, wysiwyg: true, height: 200 },
+		image: { type: Types.CloudinaryImage },
     },
+    topSection: {
+		heading: { type: Types.Text, wysiwyg: true, height: 150 },
+		text: { type: Types.Html, wysiwyg: true, height: 200 },
+		image: { type: Types.CloudinaryImage },
+	},
+	impact1: {
+		image: {type: Types.CloudinaryImage},
+		value: {type: Number},
+		text: {type: Types.Text}
+	},
+	impact2: {
+		image: {type: Types.CloudinaryImage},
+		value: {type: Number},
+		text: {type: Types.Text}
+	},
+	impact3: {
+		image: {type: Types.CloudinaryImage},
+		value: {type: Number},
+		text: {type: Types.Text}
+	},
+	impact4: {
+		image: {type: Types.CloudinaryImage},
+		value: {type: Number},
+		text: {type: Types.Text}
+	},
+	middleSection: {
+		heading1: {type: Types.Text},
+		text: { type: Types.Html, wysiwyg: true, height: 200 },		
+		cardHeading: {type: Types.Text},
+		cardText: { type: Types.Html, wysiwyg: true, height: 200 },
+		cardFile: {type: Types.CloudinaryImage},
+	},
+	quote: {
+		text: { type: Types.Html, wysiwyg: true, height: 200 },
+		author: {type: Types.Text},
+	},
+	story: {
+		image: {type: Types.CloudinaryImage},
+		heading: {type: Types.Text},
+		subHeading: {type: Types.Text},
+		text: { type: Types.Html, wysiwyg: true, height: 200 },
+		achievement1: {
+			image: {type: Types.CloudinaryImage},
+			text: {type: Types.Text}
+		},
+		achievement2: {
+			image: {type: Types.CloudinaryImage},
+			text: {type: Types.Text}
+		},
+		achievement3: {
+			image: {type: Types.CloudinaryImage},
+			text: {type: Types.Text}
+		}
+	}
 });
 
 Cause.schema.virtual('content.full').get(function () {
