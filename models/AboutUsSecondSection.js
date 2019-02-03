@@ -24,7 +24,7 @@ About.add({
     },
     contentBottom: {
         heading: { type: Types.Text, wysiwyg: true, height: 150 },
-        text: { type: Types.Hext, wysiwyg: true, height: 400 },
+        text: { type: Types.Html, wysiwyg: true, height: 400 },
     },
     image_logos: {
         image_logo1: { type: Types.CloudinaryImage },
