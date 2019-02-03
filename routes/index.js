@@ -45,15 +45,15 @@ exports = module.exports = function (app) {
 	app.get('/causes/homepage', routes.views.causeTopPage);
 	app.get('/causes/homepage-card', routes.views.causeHomePageCard);
 	app.get('/featured-cause-cards', routes.views.featuredcauses);
-	app.get('/howitworkssteps', routes.views.steps);
-  	app.get('/howitworkshomepagecard', routes.views.HowCard);
+	app.get('/howitworkshomepagecard', routes.views.HowCard);
+	app.get('/impactsection', routes.views.impact);
 	app.get('/howitworkstoppage', routes.views.howItWorksTopPage);
 	app.get('/howitworkshpfirstsection', routes.views.howitworkshpfirstsection);
-	app.get('/impactsection', routes.views.impact);
 	app.get('/our-team/our-promise', routes.views.ourteamOurPromise);
 	app.get('/our-team/members',routes.views.ourteamMembers); 
-	app.get('/our-team/find-out-more', routes.views.ourteamFindOutMore);
+	app.get('/howitworkssteps', routes.views.steps);
 	app.get('/storycause', routes.views.storycause);
+	app.get('/our-team/find-out-more', routes.views.ourteamFindOutMore);
 	app.get('/teamsection', routes.views.teamSection); 
 
 
