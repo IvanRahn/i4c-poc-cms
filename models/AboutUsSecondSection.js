@@ -42,6 +42,8 @@ About.add({
             href: { type: Types.Text, wysiwyg: true, height: 400 },
         },
     },
+    volunteerHeading: { type: Types.Text, wysiwyg: true, height: 150 },
+
 });
 
 About.schema.virtual('content.full').get(function () {
