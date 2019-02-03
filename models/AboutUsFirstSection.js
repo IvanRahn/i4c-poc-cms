@@ -13,28 +13,19 @@ var About = new keystone.List('AboutFirstSection', {
 
 About.add({
 	title: { type: String, required: true },
-	featured: { type: Types.Select, options: 'Yes, No', default: 'No', index: true },
     image: { type: Types.CloudinaryImage },
-    card: {
-        pageImage: { type: Types.CloudinaryImage },
-        heading: { type: Types.Text, wysiwyg: true, height: 150 },
-		text: { type: Types.Text, wysiwyg: true, height: 400 },
-    },
-    linkTop: {
-        text: { type: Types.Text, wysiwyg: true, height: 400 },
-    },
 	contentTop: {
         heading: { type: Types.Text, wysiwyg: true, height: 150 },
-        text: { type: Types.Text, wysiwyg: true, height: 400 },
+        text: { type: Types.Html, wysiwyg: true, height: 400 },
     },
     contentBottom: {
         heading: { type: Types.Text, wysiwyg: true, height: 150 },
+        text: { type: Types.Html, wysiwyg: true, height: 400 },
+    },
+    link: {
         text: { type: Types.Text, wysiwyg: true, height: 400 },
-        link: {
-            text: { type: Types.Text, wysiwyg: true, height: 400 },
-            color: { type: Types.Text, wysiwyg: true, height: 150 },
-            href: { type: Types.Text, wysiwyg: true, height: 150 },
-        },
+        color: { type: Types.Text, wysiwyg: true, height: 150 },
+        location: { type: Types.Text, wysiwyg: true, height: 150 },
     },
 });
 

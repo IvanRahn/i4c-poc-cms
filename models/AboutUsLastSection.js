@@ -6,7 +6,7 @@ var Types = keystone.Field.Types;
  * ==========
  */
 
-var About = new keystone.List('AboutSecondSection', {
+var About = new keystone.List('AboutLastSection', {
 	map: { name: 'title' },
 	autokey: { path: 'slug', from: 'title', unique: true },
 });
@@ -16,34 +16,21 @@ About.add({
     image: { type: Types.CloudinaryImage },
 	contentTop: {
         heading: { type: Types.Text, wysiwyg: true, height: 150 },
-		text: { type: Types.Html, wysiwyg: true, height: 400 },
+        text: { type: Types.Html, wysiwyg: true, height: 400 },
     },
-    contentMiddle: {
-        heading: { type: Types.Text, wysiwyg: true, height: 150 },
-		text: { type: Types.Html, wysiwyg: true, height: 400 },
+    link: {
+        text: { type: Types.Text, wysiwyg: true, height: 400 },
+        color: { type: Types.Text, wysiwyg: true, height: 400 },
+        href: { type: Types.Text, wysiwyg: true, height: 400 },
     },
     contentBottom: {
         heading: { type: Types.Text, wysiwyg: true, height: 150 },
-        text: { type: Types.Hext, wysiwyg: true, height: 400 },
-    },
-    image_logos: {
-        image_logo1: { type: Types.CloudinaryImage },
-        image_logo2: { type: Types.CloudinaryImage },
-    },
-    linksBottom: {
         link: {
             text: { type: Types.Text, wysiwyg: true, height: 400 },
             color: { type: Types.Text, wysiwyg: true, height: 400 },
             href: { type: Types.Text, wysiwyg: true, height: 400 },
         },
-        link2: {
-            text: { type: Types.Text, wysiwyg: true, height: 400 },
-            color: { type: Types.Text, wysiwyg: true, height: 400 },
-            href: { type: Types.Text, wysiwyg: true, height: 400 },
-        },
     },
-    volunteerHeading: { type: Types.Text, wysiwyg: true, height: 150 },
-
 });
 
 About.schema.virtual('content.full').get(function () {
