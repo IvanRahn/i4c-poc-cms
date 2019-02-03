@@ -13,24 +13,15 @@ var About = new keystone.List('AboutLastSection', {
 
 About.add({
 	title: { type: String, required: true },
-	featured: { type: Types.Select, options: 'Yes, No', default: 'No', index: true },
     image: { type: Types.CloudinaryImage },
 	contentTop: {
         heading: { type: Types.Text, wysiwyg: true, height: 150 },
-        text: { type: Types.Text, wysiwyg: true, height: 400 },
-        link: {
-            text: { type: Types.Text, wysiwyg: true, height: 400 },
-            color: { type: Types.Text, wysiwyg: true, height: 400 },
-            href: { type: Types.Text, wysiwyg: true, height: 400 },
-        },
+        text: { type: Types.Html, wysiwyg: true, height: 400 },
     },
-    contentBottom: {
-        heading: { type: Types.Text, wysiwyg: true, height: 150 },
-		link: {
-            text: { type: Types.Text, wysiwyg: true, height: 400 },
-            color: { type: Types.Text, wysiwyg: true, height: 400 },
-            href: { type: Types.Text, wysiwyg: true, height: 400 },
-        },
+    link: {
+        text: { type: Types.Text, wysiwyg: true, height: 400 },
+        color: { type: Types.Text, wysiwyg: true, height: 400 },
+        href: { type: Types.Text, wysiwyg: true, height: 400 },
     },
 });
 

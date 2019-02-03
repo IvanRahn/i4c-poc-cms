@@ -13,23 +13,22 @@ var About = new keystone.List('AboutSecondSection', {
 
 About.add({
 	title: { type: String, required: true },
-	featured: { type: Types.Select, options: 'Yes, No', default: 'No', index: true },
     image: { type: Types.CloudinaryImage },
 	contentTop: {
         heading: { type: Types.Text, wysiwyg: true, height: 150 },
-		text: { type: Types.Text, wysiwyg: true, height: 400 },
+		text: { type: Types.Html, wysiwyg: true, height: 400 },
     },
     contentMiddle: {
         heading: { type: Types.Text, wysiwyg: true, height: 150 },
-		text: { type: Types.Text, wysiwyg: true, height: 400 },
+		text: { type: Types.Html, wysiwyg: true, height: 400 },
     },
     contentBottom: {
-        image_logos: {
-            image_logo1: { type: Types.CloudinaryImage },
-            image_logo2: { type: Types.CloudinaryImage },
-        },
         heading: { type: Types.Text, wysiwyg: true, height: 150 },
-        text: { type: Types.Text, wysiwyg: true, height: 400 },
+        text: { type: Types.Hext, wysiwyg: true, height: 400 },
+    },
+    image_logos: {
+        image_logo1: { type: Types.CloudinaryImage },
+        image_logo2: { type: Types.CloudinaryImage },
     },
     linksBottom: {
         link: {
@@ -38,11 +37,6 @@ About.add({
             href: { type: Types.Text, wysiwyg: true, height: 400 },
         },
         link2: {
-            text: { type: Types.Text, wysiwyg: true, height: 400 },
-            color: { type: Types.Text, wysiwyg: true, height: 400 },
-            href: { type: Types.Text, wysiwyg: true, height: 400 },
-        },
-        link3: {
             text: { type: Types.Text, wysiwyg: true, height: 400 },
             color: { type: Types.Text, wysiwyg: true, height: 400 },
             href: { type: Types.Text, wysiwyg: true, height: 400 },
