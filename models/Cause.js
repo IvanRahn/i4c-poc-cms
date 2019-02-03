@@ -25,6 +25,7 @@ Cause.add({
 		text: { type: Types.Html, wysiwyg: true, height: 200 },
 		image: { type: Types.CloudinaryImage },
 	},
+	impact: {
 	impact1: {
 		image: {type: Types.CloudinaryImage},
 		value: {type: Number},
@@ -45,6 +46,7 @@ Cause.add({
 		value: {type: Number},
 		text: {type: Types.Text}
 	},
+},
 	middleSection: {
 		heading1: {type: Types.Text},
 		text: { type: Types.Html, wysiwyg: true, height: 200 },		
