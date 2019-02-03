@@ -1,6 +1,6 @@
 var keystone = require('keystone');
 
 exports = module.exports = async function (req, res) {
-	const card = await keystone.list('AboutThirdSection').model.find();
+	const card = await keystone.list('AboutLastSection').model.find();
     res.send(card);
 }
