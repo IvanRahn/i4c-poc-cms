@@ -43,6 +43,11 @@ exports = module.exports = function (app) {
 	app.get('/boardmemberstoppage', routes.views.boardMembersTopPage);
 	app.get('/causes', routes.views.causes);
 	app.get('/causes/causeTopPage', routes.views.causeTopPage);
+
+	app.get('/causes/causeTopPage', routes.views.causeTopPage);
+	app.get('/causes/our-donor', routes.views.causeOurDonorSection);
+	app.get('/causes/join-us', routes.views.causeJoinUsSection);
+
 	app.get('/causes/homepage-card', routes.views.causeHomePageCard);
 	app.get('/featured-cause-cards', routes.views.featuredcauses);
 	app.get('/howitworkssteps', routes.views.steps);
