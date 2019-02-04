@@ -70,9 +70,9 @@ keystone.set('nav', {
 	HomePage: ['ImpactSection', 'TeamSection'],
 	FeaturedCauseSection: 'FeaturedCauseCard',
 	ImpactSection: "ImpactSection",
-	About: ["AboutFirstSection", "AboutSecondSection", "AboutVolunteerSection", "AboutLastSection"],
+	About: ["AboutFirstSection", "AboutSecondSection", "AboutVolunteerSection", "AboutLastSection", 'AboutHomePageCard',],
 	HowItWorks: ["HowItWorksSteps","HomePageCard", "HomePageCardFirstSection", "HowItWorksTopPage"],
-	Causes: ["causes", "StoryCause", "CauseHomePageCard", "CauseTopPage", "CauseJoinUsSection", "CauseOurDonorSection" ], 
+	Causes: ["causes", "StoryCause", "CauseHomePageCard", "CauseTopPage", "CauseJoinUsSection", "CauseOurDonorSection", "CauseDonateCard", ], 
 	OurTeam: ["OurTeamOurPromise", "OurTeamMembers", "OurTeamFindOutMore", "BoardMembersTopPage"],
 	// wrap boardmemebers: []
 });

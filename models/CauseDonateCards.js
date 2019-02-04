@@ -6,7 +6,7 @@ var Types = keystone.Field.Types;
  * ==========
  */
 
-var Cause = new keystone.List('CauseHomePageCard', {
+var Cause = new keystone.List('CauseDonateCard', {
 	map: { name: 'title' },
 	autokey: { path: 'slug', from: 'title', unique: true },
 });
@@ -16,7 +16,7 @@ Cause.add({
     featured: { type: Types.Select, options: 'Yes, No', default: 'No', index: true },
     image: { type: Types.CloudinaryImage },
     heading: { type: Types.Text, wysiwyg: true, height: 150 },
-    text: { type: Types.Html, wysiwyg: true, height: 400 },
+    text: { type: Types.Text, wysiwyg: true, height: 400 },
     
 });
 
