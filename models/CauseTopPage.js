@@ -14,16 +14,8 @@ Cause.add({
         color: { type: Types.Text, wysiwyg: true, height: 400 },
         href: { type: Types.Text, wysiwyg: true, height: 400 },
     },
-    firstHeading: { type: Types.Text, wysiwyg: true, height: 150 },
-    firstText: { type: Types.Text, wysiwyg: true, height: 400 },
-    secondHeading: { type: Types.Text, wysiwyg: true, height: 150 },
-    secondText: { type: Types.Text, wysiwyg: true, height: 400 },
-    thirdText: { type: Types.Text, wysiwyg: true, height: 400 }, 
-    bottomlink: {
-        text: { type: Types.Text, wysiwyg: true, height: 400 },
-        color: { type: Types.Text, wysiwyg: true, height: 400 },
-        href: { type: Types.Text, wysiwyg: true, height: 400 },
-    },
+    heading: { type: Types.Text, wysiwyg: true, height: 150 },
+    text: { type: Types.Text, wysiwyg: true, height: 400 },
 });
 
 Cause.schema.virtual('content.full').get(function () {
