@@ -15,7 +15,7 @@ Cause.add({
         href: { type: Types.Text, wysiwyg: true, height: 400 },
     },
     heading: { type: Types.Text, wysiwyg: true, height: 150 },
-    text: { type: Types.Text, wysiwyg: true, height: 400 },
+    text: { type: Types.Html, wysiwyg: true, height: 400 },
 });
 
 Cause.schema.virtual('content.full').get(function () {
