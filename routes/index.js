@@ -39,16 +39,18 @@ exports = module.exports = function (app) {
 	app.get('/about/first-section', routes.views.aboutFirstSection);
 	app.get('/about/second-section', routes.views.aboutSecondSection);
 	app.get('/about/last-section', routes.views.aboutLastSection);
+
+	app.get('/about/homepage-card', routes.views.aboutHomePageCard);
+	
+
 	app.get('/about/volunteer-section', routes.views.aboutVolunteerSection);
 	app.get('/boardmemberstoppage', routes.views.boardMembersTopPage);
 	app.get('/causes', routes.views.causes);
 	app.get('/causes/causeTopPage', routes.views.causeTopPage);
-
-	app.get('/causes/causeTopPage', routes.views.causeTopPage);
 	app.get('/causes/our-donor', routes.views.causeOurDonorSection);
 	app.get('/causes/join-us', routes.views.causeJoinUsSection);
-
 	app.get('/causes/homepage-card', routes.views.causeHomePageCard);
+	app.get('/causes/donate-card', routes.views.causeDonateCard);
 	app.get('/featured-cause-cards', routes.views.featuredcauses);
 	app.get('/howitworkssteps', routes.views.steps);
 	app.get('/howitworkshomepagecard', routes.views.HowCard);

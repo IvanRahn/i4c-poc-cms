@@ -6,7 +6,7 @@ var Types = keystone.Field.Types;
  * ==========
  */
 
-var Cause = new keystone.List('CauseHomePageCard', {
+var Cause = new keystone.List('AboutHomePageCard', {
 	map: { name: 'title' },
 	autokey: { path: 'slug', from: 'title', unique: true },
 });
