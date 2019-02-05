@@ -49,14 +49,15 @@ exports = module.exports = function (app) {
 	app.get('/causes/homepage-card', routes.views.causeHomePageCard);
 	app.get('/causes/donate-card', routes.views.causeDonateCard);
 	app.get('/featured-cause-cards', routes.views.featuredcauses);
-	app.get('/howitworkssteps', routes.views.steps);
-	app.get('/howitworkshomepagecard', routes.views.HowCard);
+	app.get('/how-it-works/donate', routes.views.steps);
+	app.get('/how-it-works/cause', routes.views.howItWorksCauseCard);
+	app.get('/how-it-works-top-card', routes.views.HowCard);
+	app.get('/how-it-works/join', routes.views.howItWorksJoin);
 	app.get('/impactsection', routes.views.impact);
-	app.get('/howitworkstoppage', routes.views.howItWorksTopPage);
 	app.get('/howitworkshpfirstsection', routes.views.howitworkshpfirstsection);
 	app.get('/our-team/our-promise', routes.views.ourteamOurPromise);
 	app.get('/our-team/members',routes.views.ourteamMembers); 
-	app.get('/storycause', routes.views.storycause);
+	app.get('/how-it-works/featured-cause', routes.views.howItWorksFeature);
 	app.get('/our-team/find-out-more', routes.views.ourteamFindOutMore);
 	app.get('/teamsection', routes.views.teamSection); 
 

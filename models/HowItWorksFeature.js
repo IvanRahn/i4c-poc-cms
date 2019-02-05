@@ -1,7 +1,7 @@
 var keystone = require('keystone');
 var Types = keystone.Field.Types;
 
-var StoryCause = new keystone.List('StoryCause', {
+var StoryCause = new keystone.List("HowItWorksFeature", {
     map: { name: 'title' },
     autokey: { path: 'slug', from: 'title', unique: true },
 });
@@ -11,7 +11,8 @@ StoryCause.add({
     //     text: { type: Types.Html, wysiwyg: true, height: 400 },
     //     image: { type: Types.CloudinaryImage },
     // },
-    title: { type: String, required: true },
+    title: { type: String, required: true }, 
+    mainHeading: {type: Types.Text, wysiwyg: true, height: 150 }, 
     image: { type: Types.CloudinaryImage },
     content: {
         heading: { type: Types.Text, wysiwyg: true, height: 150 },

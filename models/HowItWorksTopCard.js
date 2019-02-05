@@ -1,7 +1,7 @@
 var keystone = require('keystone');
 var Types = keystone.Field.Types;
 
-var HowCard = new keystone.List('HomePageCard', {
+var HowCard = new keystone.List("HomePageTopCard", {
 	map: { name: 'title' },
 	autokey: { path: 'slug', from: 'title', unique: true },
 });

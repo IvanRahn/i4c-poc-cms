@@ -1,11 +1,6 @@
 var keystone = require('keystone');
 var Types = keystone.Field.Types;
 
-/**
- * Post Model
- * ==========
- */
-
 var HowItWorksSteps = new keystone.List('HowItWorksSteps', {
 	map: { name: 'title' },
 	autokey: { path: 'slug', from: 'title', unique: true },

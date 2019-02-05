@@ -1,7 +1,7 @@
 var keystone = require('keystone');
 var Types = keystone.Field.Types;
 
-var Cause = new keystone.List('CauseJoinUsSection', {
+var Cause = new keystone.List('HowItWorksJoin', {
 	map: { name: 'title' },
 	autokey: { path: 'slug', from: 'title', unique: true },
 });
