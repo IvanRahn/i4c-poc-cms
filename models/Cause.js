@@ -49,7 +49,8 @@ Cause.add({
 },
 	middleSection: {
 		heading1: {type: Types.Text},
-		text: { type: Types.Html, wysiwyg: true, height: 200 },		
+		text: { type: Types.Html, wysiwyg: true, height: 200 },
+		cardIcon: { type: Types.CloudinaryImage},		
 		cardHeading: {type: Types.Text},
 		cardText: { type: Types.Html, wysiwyg: true, height: 200 },
 		cardFile: {type: Types.CloudinaryImage},
