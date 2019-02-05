@@ -11,7 +11,7 @@ HowCard.add({
     featured: { type: Types.Select, options: 'Yes, No', default: 'No', index: true },
     image: { type: Types.CloudinaryImage },
     heading: { type: Types.Text, wysiwyg: true, height: 150 },
-    text: { type: Types.Text, wysiwyg: true, height: 400 },
+    text: { type: Types.Html, wysiwyg: true, height: 400 },
     
 });
 

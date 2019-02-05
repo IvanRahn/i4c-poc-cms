@@ -10,9 +10,9 @@ HowCard.add({
     title: { type: String, required: true },
     image: { type: Types.CloudinaryImage },
     mainHeading: { type: Types.Text, wysiwyg: true, height: 150 },
-    mainText: { type: Types.Text, wysiwyg: true, height: 400 },
+    mainText: { type: Types.Html, wysiwyg: true, height: 400 },
     subHeading: { type: Types.Text, wysiwyg: true, height: 150 },
-    subText: { type: Types.Text, wysiwyg: true, height: 400 },    
+    subText: { type: Types.Html, wysiwyg: true, height: 400 },    
 });
 
 HowCard.schema.virtual('content.full').get(function () {

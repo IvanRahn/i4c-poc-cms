@@ -53,11 +53,11 @@ exports = module.exports = function (app) {
 	app.get('/how-it-works/cause', routes.views.howItWorksCauseCard);
 	app.get('/how-it-works-top-card', routes.views.HowCard);
 	app.get('/how-it-works/join', routes.views.howItWorksJoin);
-	app.get('/impactsection', routes.views.impact);
 	app.get('/howitworkshpfirstsection', routes.views.howitworkshpfirstsection);
+	app.get('/how-it-works/featured-cause', routes.views.howItWorksFeature);
+	app.get('/impactsection', routes.views.impact);
 	app.get('/our-team/our-promise', routes.views.ourteamOurPromise);
 	app.get('/our-team/members',routes.views.ourteamMembers); 
-	app.get('/how-it-works/featured-cause', routes.views.howItWorksFeature);
 	app.get('/our-team/find-out-more', routes.views.ourteamFindOutMore);
 	app.get('/teamsection', routes.views.teamSection); 
 
