@@ -15,7 +15,8 @@ StoryCause.add({
     mainHeading: {type: Types.Text, wysiwyg: true, height: 150 }, 
     image: { type: Types.CloudinaryImage },
     content: {
-        heading: { type: Types.Text, wysiwyg: true, height: 150 },
+        heading: { type: Types.Text, wysiwyg: true, height: 150 }, 
+        subHeading: { type: Types.Text, wysiwyg: true, height: 150 },
         text: { type: Types.Html, wysiwyg: true, height: 400 },
     }, 
     
