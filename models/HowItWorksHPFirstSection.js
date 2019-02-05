@@ -1,23 +1,18 @@
 var keystone = require('keystone');
 var Types = keystone.Field.Types;
 
-var HowCard = new keystone.List('HomePageCardFirstSection', {
+var HowCard = new keystone.List('HowItWorksFirstSection', {
 	map: { name: 'title' },
 	autokey: { path: 'slug', from: 'title', unique: true },
 });
 
 HowCard.add({
     title: { type: String, required: true },
-    heading: { type: Types.Text, wysiwyg: true, height: 150 },
-    text: { type: Types.Text, wysiwyg: true, height: 400 },
-    link: {
-        text: { type: Types.Html, wysiwyg: true, height: 400 },
-        url: { type: Types.Text, wysiwyg: true, height: 400 },
-    },
     image: { type: Types.CloudinaryImage },
-    
-    
-    
+    mainHeading: { type: Types.Text, wysiwyg: true, height: 150 },
+    mainText: { type: Types.Text, wysiwyg: true, height: 400 },
+    subHeading: { type: Types.Text, wysiwyg: true, height: 150 },
+    subText: { type: Types.Text, wysiwyg: true, height: 400 },    
 });
 
 HowCard.schema.virtual('content.full').get(function () {
